@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyCTwV8pXqJMAWV9r8jeVn6ILDNZd7TXw_E"; 
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY; 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const analyzeThoughts = async (thoughtText) => {
